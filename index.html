@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Consulta el clima en tu ciudad</h1>
+    </div>
+    <div class="container" id="main">
+      <div class="card_container">
+        <form id="form">
+          <div class="input_pais">
+            <select name="pais" id="pais">
+              <option disabled selected value="">-- Seleccione --</option>
+              <option value="AR">Argentina</option>
+              <option value="CO">Colombia</option>
+              <option value="CR">Costa Rica</option>
+              <option value="ES">España</option>
+              <option value="US">Estados Unidos</option>
+              <option value="MX">México</option>
+              <option value="PE">Perú</option>
+            </select>
+          </div>
+          <div class="input_ciudad">
+            <input
+              type="text"
+              name="ciudad"
+              id="ciudad"
+              placeholder="Escribe tu ciudad"
+            />
+          </div>
+          <div class="form_button">
+            <button id="submit">Consultar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card_container">
+        <div id="result">
+
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
